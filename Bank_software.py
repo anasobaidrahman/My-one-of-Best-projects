@@ -1,6 +1,5 @@
 import datetime
 import os
-import datetime
 print('🏦This is a Digital bank.')
 
 

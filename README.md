@@ -1,33 +1,5 @@
 # Use and Instructions to run these projects
 These all projects are developed by python, So there is a need of installation of python to run these projects.And also all these projects are only terminal version and tested on IDE.
-# Article Analyzer
-
-A simple Django web app that analyzes an article's word frequency. It takes user input, counts how many times each word appears, and displays the sorted results.
-
-## Features
-
-- Accepts user-submitted article text
-- Counts total words
-- Shows how often each word appears
-- Displays results sorted by frequency
-
-## How to Run
-
-1. Clone the repository
-2. Make sure Django is installed:
-3. Run the server: python manage.py runserver
-4. Open your browser and go to: http://127.0.0.1:8000/
-
-## File Overview
-
-- `views.py`: Contains logic to analyze the article
-- `Artical_analyzer.html`: Input form for users
-- `2nd_analyzer.html`: Displays results
-
-
-
-> 💡 Note: Make sure your Django templates are set up correctly in `settings.py`.
----
 
 # Zombie Game Simulation
 

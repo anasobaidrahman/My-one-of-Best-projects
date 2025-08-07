@@ -1,6 +1,7 @@
 import  random
 c=1
-while c<=5:
+attempt = 5
+while c<=attempt:
     a=random.randint(1,10)
     b=int(input('Guess number between 1 to 10:'))
     print(f'Computer thinked:{a}')

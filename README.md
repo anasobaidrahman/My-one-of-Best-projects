@@ -1,33 +1,106 @@
 # Use and Instructions to run these projects
 These all projects are developed by python, So there is a need of installation of python to run these projects.And also all these projects are only terminal version and tested on IDE.
-# Article Analyzer
 
-A simple Django web app that analyzes an article's word frequency. It takes user input, counts how many times each word appears, and displays the sorted results.
+# 🌤 Weather App – Python Project
+A command-line Weather App built with Python and the OpenWeatherMap API.
+It allows users to enter a city name and view real-time weather information including temperature, humidity, wind speed, visibility, sunrise/sunset times, and more.
 
 ## Features
+Fetches real-time weather for any city in the world
 
-- Accepts user-submitted article text
-- Counts total words
-- Shows how often each word appears
-- Displays results sorted by frequency
+Displays:
 
+Weather condition & description
+
+Temperature, max & min temperatures
+
+Humidity & atmospheric pressure
+
+Wind speed, gust, and direction
+
+Visibility distance
+
+Sunrise and sunset times (local to city)
+
+Includes weather icon link from OpenWeatherMap
+
+Handles:
+
+Invalid city names
+
+Network errors
+
+API errors
+
+Color-coded city name for better CLI readability
+
+## How It Works
+User enters a city name (or types q to quit).
+
+The app sends a request to OpenWeatherMap API.
+
+Weather data is parsed and displayed in a formatted report.
+
+The program continues until the user quits.
+
+## Requirements
+Python 3.x
+
+requests module
+
+OpenWeatherMap API key (Free to get)
+
+Install dependencies:
+
+
+pip install requests
+## Getting an API Key
+Sign up at OpenWeatherMap
+
+Go to your account → API Keys
+
+Copy your key and replace:
+
+API_KEY = '<your API key>'
 ## How to Run
+Save your script as weather_app.py
 
-1. Clone the repository
-2. Make sure Django is installed:
-3. Run the server: python manage.py runserver
-4. Open your browser and go to: http://127.0.0.1:8000/
-
-## File Overview
-
-- `views.py`: Contains logic to analyze the article
-- `Artical_analyzer.html`: Input form for users
-- `2nd_analyzer.html`: Displays results
+Open terminal and run:
 
 
+python weather_app.py
+Enter a city name to get weather details.
+Type q to exit.
 
-> 💡 Note: Make sure your Django templates are set up correctly in `settings.py`.
+## Sample Output
+
 ---
+🌤 Welcome to the Weather App!<br>
+Type any time "q" to quit<br>
+Enter City Name: Lahore<br>
+ Lahore <br>
+Weather Report for Time:03:15 PM    Date:11/08/2025<br>
+Weather Condition: Clouds http://openweathermap.org/img/wn/04d@2x.png | Description: scattered clouds<br>
+Temperature: 32℃  <br>
+Humidity: 48%  <br>
+Pressure: 1012hPa  <br>
+Wind Speed: 14.4Km/h | Wind gust: 18<br>  
+Wind Direction: Wind blowing from southwest top northeast in 210 degrees<br>  
+Visibility: 6.0Km  <br>
+Sunset: Time:06:55 PM    Date:11/08/2025<br>  
+Sunrise: Time:05:28 AM    Date:11/08/2025<br>
+---
+## Possible Improvements
+Save weather history to a file
+
+Add forecast data (3-hour or 7-day)
+
+Build GUI using Tkinter or PyQt
+
+Create a web app version with Flask/Django
+
+## 📄 License
+This project is licensed under the MIT License.
 
 # Zombie Game Simulation
 

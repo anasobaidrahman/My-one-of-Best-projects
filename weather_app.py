@@ -76,7 +76,7 @@ while True:
                 f'Temperature: {Temperature}℃\n'
                 f'Humidity: {humidity}%\n'
                 f'Pressure: {pressure}hPa\n'
-                f'Wind Speed: {wind_speed} | Wind gust: {wind_gust}\n'
+                f'Wind Speed: {wind_speed} | Wind gust: {wind_gust}km/h\n'
                 f'Wind Direction: {wind_direction_str}\n'
                 f'visibilty: {visibility}\n'
                 f'Sunset: {sunset_time}\n'

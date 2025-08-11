@@ -84,7 +84,7 @@ Weather Condition: Clouds http://openweathermap.org/img/wn/04d@2x.png | Descript
 Temperature: 32℃  <br>
 Humidity: 48%  <br>
 Pressure: 1012hPa  <br>
-Wind Speed: 14.4Km/h | Wind gust: 18<br>  
+Wind Speed: 14.4Km/h | Wind gust: 18Km/h<br>  
 Wind Direction: Wind blowing from southwest top northeast in 210 degrees<br>  
 Visibility: 6.0Km  <br>
 Sunset: Time:06:55 PM    Date:11/08/2025<br>  

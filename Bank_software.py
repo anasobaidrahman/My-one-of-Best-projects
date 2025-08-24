@@ -1,8 +1,26 @@
 import datetime
 import os
+import os
+import datetime
+
 print('🏦This is a Digital bank.')
 
 
+def greet_start(fx):
+    def wraper(*args, **kwargs):
+        print('Welcome back again!')
+        result= fx(*args, **kwargs,)
+        return result
+    return wraper
+
+def greet_end(fx):
+    def wraper(*args, **kwargs):
+        result= fx(*args, **kwargs,)
+        print('Thanks for using Bank software!')
+        return result
+    return wraper
+
+@greet_end
 def deposite(username):
     print('Enter an amount that you want to deposit')
     dep_amnt = get_input(100, 100000)
@@ -24,10 +42,7 @@ def deposite(username):
 
     print(f'\033[92m✔ {dep_amnt} is deposited successfully.\033[0m')
 
-
-import os
-import datetime
-
+@greet_end
 def withdraw(username):
     path = os.getcwd()
     full_path = os.path.join(path, username + '.txt')
@@ -61,7 +76,7 @@ def withdraw(username):
             print('❌\033[91mInvalid amount. You entered more than your balance or less than 0.\033[0m')
 
 
-
+@greet_end
 def show(username):
     path = os.getcwd()
     full_path = os.path.join(path,username+'.txt')
@@ -108,7 +123,7 @@ def acount_creat():
         user_data.write(f'password={pass_user}\n')
         user_data.write(f'amount={amount_user} = deposited at {datetime.datetime.now()}\n')
 
-
+@greet_start
 def login_account():
 
 
@@ -160,6 +175,7 @@ def login_account():
         else:
             acount_creat()
 
+@greet_end
 def get_trn_list(username):
     path = os.getcwd()
     full_path = os.path.join(path, username + '.txt')
